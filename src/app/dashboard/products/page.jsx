@@ -62,7 +62,7 @@ export default async function Products() {
                 Count
               </TableHead>
               <TableHead className="text-[20px] text-blue-100 font-[600] bg-neutral-800 ">
-                Profit
+                Profit 
               </TableHead>
               <TableHead className="text-[20px] text-blue-100 font-[600] bg-neutral-800 ">
                 expire date
@@ -83,7 +83,7 @@ export default async function Products() {
                 <TableCell> {product.buyPrice}</TableCell>
                 <TableCell> {product.salePrice}</TableCell>
                 <TableCell> {product.inventoryStock}</TableCell>
-                <TableCell> {product.inventoryStock* (product.salePrice-product.buyPrice)}</TableCell>
+                <TableCell> {product.salePrice-product.buyPrice}</TableCell>
                 <TableCell>{product.expirydate.toLocaleDateString()}</TableCell>
                 <TableCell>{product.createdAt.toLocaleDateString()}</TableCell>
                 <TableCell>

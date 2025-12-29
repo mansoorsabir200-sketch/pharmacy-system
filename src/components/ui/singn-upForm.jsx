@@ -19,10 +19,10 @@ export function SigneUPForm() {
     }
   }
   return (
+    
     <form
       onSubmit={handelSubmit}
-      className="w-[660px] flex flex-col space-y-4  "
-    >
+      className="w-[300px] flex flex-col space-y-2 mx-auto px-2 ">
       <h2 className="text-red-700">{errMsg} </h2>
       <div className="flex  flex-col space-y-2">
         <label className="text-[20px] opacity-60"> Enter Name </label>
@@ -57,19 +57,20 @@ export function SigneUPForm() {
         />
       </div>
       <div className="flex justify-between">
-        <Button type="Submit" className="w-2xs ">
-          {" "}
-          Create Acc{" "}
-        </Button>
-
-        <Button
-          variant="ghost"
-          asChild
-          className="p-1n border-[0.5px]  border-neutral-500"
-        >
-          <Link href="/sign-in">Sign in</Link>
-        </Button>
+        <div className="flex flex-col space-y-4   ">
+          <Button type="Submit" className="w-2xs mt-4 p-1 hover:scale-105 duration-700 ">
+            Create Acount
+          </Button>
+          <Button
+            variant="ghost"
+            asChild
+            className=" bg-linear-30 w-[200px] mx-auto  from-5% to-slate-400 hover:scale-105 duration-700"
+          >
+            <Link href="/sign-in">Sign in</Link>
+          </Button>
+        </div>
       </div>
     </form>
+    
   );
 }

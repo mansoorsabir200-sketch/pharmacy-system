@@ -15,7 +15,7 @@ export default async function ProudctIdPage(props) {
 if(product == null){
   return notFound();
 }
-return <div className="mt-42 p-12 flex"> 
+return <div className="mx-auto px-4 w-full my-4  flex justify-center items-center"> 
 
  <Card className="bg-linear-to-r from-5% to-blue-950"> <CardHeader> <CardTitle> edite product</CardTitle> </CardHeader>
 <CardContent> <ProductsFrom product={product}/> </CardContent>

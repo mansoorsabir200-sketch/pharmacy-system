@@ -18,8 +18,8 @@ export function SignInForm() {
   }
   return (
     <form
+      className="w-xs md:w-xl flex flex-col space-y-2 pt-4 px-4 "
       onSubmit={handelSubmit}
-      className="w-[660px] flex flex-col space-y-4  "
     >
       <h2 className="text-red-500 text-2xl"> {errMsg} </h2>
       {/* ----------- */}
@@ -34,7 +34,7 @@ export function SignInForm() {
         />
       </div>
       {/* ------------- */}
-      <div className="flex  flex-col space-y-2">
+      <div className="flex   flex-col space-y-2">
         <label className="text-[20px] opacity-60"> Enter Password </label>
         <Input
           value={password}
@@ -44,22 +44,18 @@ export function SignInForm() {
           required
         />
       </div>
-      <div
-        className="flex space-x-56
-      "
-      >
-        <Button type="Submit" className="w-2xs m-auto mt-10">
-          {" "}
-          Signe In{" "}
-        </Button>{" "}
-        <Link
-          href="/sign-up"
-          className="w-2xs m-auto mt-10 border-2 rounded-2xl bg-neutral-800
-           hover:bg-neutral-700 text-center p-1.5"
+
+      <div className="flex  flex-col mx-auto justify-center items-center  mt-4 mb-2 w-full  ">
+        <Button type="Submit" className="w-2xs mt-2   ">
+          Sign in
+        </Button>
+        <Button
+          variant="ghost"
+          asChild
+          className=" bg-linear-30 w-2xs animate-pulse  mt-2  from-5% to-slate-400 hover:scale-105 duration-700"
         >
-          {" "}
-          signe UP
-        </Link>
+          <Link href="/sign-up">Sign up</Link>
+        </Button>
       </div>
     </form>
   );

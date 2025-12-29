@@ -37,11 +37,8 @@ if(mySales === 0){
 }
 
   return (
-    <div
-      className="h-screen  bg-gradient-to-br from-50% to-gray-700 w-full 
-      mt-10    "
-    >
-      <div className=" flex justify-between  p-10 mt-4 w-full  ">
+    <div className="h-screen  bg-gradient-to-br from-50% to-gray-700 w-full  mt-0 ">
+      <div className=" flex justify-between  p-2 px-4 mt-4 w-full  ">
         <h1 className="text-2xl md:text-3xl font-serif   tracking-tight">
           All Sales
         </h1>
@@ -52,7 +49,7 @@ if(mySales === 0){
           </Link>
         </Button>
       </div>
-      <div className="px-12 py-6 ">
+      <div className="px-8 py-6 ">
         {/* ---------------------------- */}
         <Table className="text-indigo-100 text-[18px] ">
           <TableHeader>
@@ -96,7 +93,7 @@ if(mySales === 0){
                   {sale.product.createdAt.toLocaleDateString()}
                 </TableCell>
                 <TableCell>
-                  <DeleteSale saleId={sale.id}/>
+                  <DeleteSale saleId={sale.id} />
                 </TableCell>
               </TableRow>
             ))}

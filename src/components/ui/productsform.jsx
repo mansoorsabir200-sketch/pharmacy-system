@@ -135,7 +135,7 @@ export default function ProductsFrom({product}) {
           SAVE
         </Button>
       ) : (
-        <Button type="submit" size="lg" className="w-2xs mt-4 ml-32">
+        <Button type="submit" size="lg" className="w-xs  mt-3 ">
           update
         </Button>
       )}
